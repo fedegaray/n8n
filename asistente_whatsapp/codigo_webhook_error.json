@@ -1,0 +1,11 @@
+{
+  "success": false,
+  "error": "Validación fallida",
+  "detalles": {
+    "mensaje_recibido": "{{ $('Recibir Mensaje').item.json.body.mensaje || 'No se recibió mensaje' }}",
+    "tipo_dato": "{{ typeof $('Recibir Mensaje').item.json.body.mensaje }}",
+    "longitud": "{{ ($('Recibir Mensaje').item.json.body.mensaje || '').length }}",
+    "timestamp": "{{ $now.toISO() }}"
+  },
+  "ayuda": "El mensaje debe ser texto entre 3 y 1000 caracteres"
+}
