@@ -6,3 +6,6 @@
 
 // Verificación 3
 {{ $json.query?.['hub.challenge'] || '' }}
+
+// Cuerpo del Response to Webhook3
+{{ $json.query['hub.challenge'] }}
