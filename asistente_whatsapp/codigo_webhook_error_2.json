@@ -1,0 +1,6 @@
+{
+  "success": false,
+  "error": "Error interno del servidor",
+  "mensaje": "Ocurrió un error inesperado",
+  "codigo": 500
+}
