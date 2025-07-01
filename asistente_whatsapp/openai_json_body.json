@@ -1,0 +1,18 @@
+{
+  "model": "gpt-4o-mini",
+  "messages": [
+    {
+      "role": "system",
+      "content": "Eres un asistente útil que responde preguntas de forma clara y concisa. Responde en el mismo idioma que el usuario."
+    },
+    {
+      "role": "user",
+      "content": "{{ $('Recibir Mensaje').item.json.body.mensaje }}"
+    }
+  ],
+  "temperature": 0.7,
+  "max_tokens": 500,
+  "top_p": 1,
+  "frequency_penalty": 0,
+  "presence_penalty": 0
+}
