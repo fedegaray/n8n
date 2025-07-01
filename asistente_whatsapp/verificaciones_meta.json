@@ -1,0 +1,8 @@
+// Verificación 1
+{{ $json.query?.['hub.mode'] || '' }}
+
+// Verificación 2
+{{ $json.query?.['hub.verify_token'] || '' }}
+
+// Verificación 3
+{{ $json.query?.['hub.challenge'] || '' }}
