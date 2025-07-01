@@ -1,0 +1,11 @@
+{
+  "success": true,
+  "mensaje": "Mensaje procesado y enviado correctamente",
+  "detalles": {
+    "pregunta_original": "{{ $('Recibir Mensaje').item.json.body.mensaje }}",
+    "whatsapp_message_id": "{{ $('Enviar a WhatsApp').item.json.messages[0].id }}",
+    "tokens_usados": "{{ $('Consultar OpenAI').item.json.usage.total_tokens }}",
+    "modelo": "{{ $('Consultar OpenAI').item.json.model }}",
+    "timestamp_proceso": "{{ $now.toISO() }}"
+  }
+}
